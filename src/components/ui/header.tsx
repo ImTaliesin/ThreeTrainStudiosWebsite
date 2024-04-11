@@ -13,7 +13,7 @@ export default function Header() {
 	];
 
 	return (
-		<div className={cn('bg-neutral-950 h-28 flex items-center justify-center')}>
+		<div className={cn('bg-neutral-950 h-28 w-svw flex fixed  items-center justify-center')}>
 			<div className='flex items-center space-x-4'>
 				<div className='flex space-x-1'>
 					{headeritems.slice(0, 3).map((item, index) => (
