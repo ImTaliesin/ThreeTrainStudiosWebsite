@@ -32,19 +32,21 @@ export default function Header() {
             <Button
               key={index}
               variant="ghost"
-              className="text-white text-sm rounded-3xl mx-1 bg-neutral-950 px-2 py-1"
+              className="text-white text-md rounded-3xl mx-1 bg-neutral-950 px-2 py-1"
             >
               {item}
             </Button>
           ))}
         </div>
-        <Image
-          src="/ttsphoto.png"
-          alt="Three Train Studios"
-          width={150}
-          height={100}
-          className="mx-auto object-cover object-bottom rounded-full"
-        />
+        <div className="absolute left-1/2 transform -translate-x-1/2 lg:static lg:transform-none">
+          <Image
+            src="/ttsphoto.png"
+            alt="Three Train Studios"
+            width={150}
+            height={100}
+            className="object-cover object-bottom rounded-full"
+          />
+        </div>
         <div className="hidden lg:flex flex-1 justify-start space-x-1">
           {headeritems.slice(3).map((item, index) => (
             <Button
@@ -56,10 +58,10 @@ export default function Header() {
             </Button>
           ))}
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden ml-auto">
           <Button
             variant="ghost"
-            className="text-white rounded-3xl mr-4 bg-neutral-950"
+            className="text-white rounded-3xl bg-neutral-950"
             onClick={toggleMenu}
           >
             {isMenuOpen ? 'Close' : 'Menu'}
@@ -67,7 +69,7 @@ export default function Header() {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="fixed top-28 left-0 right-0 bottom-0 bg-neutral-950/80 flex items-center justify-center z-40">
+        <div className="fixed top-28 left-0 right-0 bottom-0 bg-neutral-950/95 flex items-center justify-center z-40">
           <div className="flex flex-col space-y-8">
             {headeritems.map((item, index) => (
               <Button
