@@ -61,7 +61,7 @@ export default function Casting() {
               <Button type='submit' className='bg-emerald-500 hover:bg-emerald-600 rounded-xl'>Submit</Button>
             </form>
             <p className='text-lg leading-relaxed pb-6'>
-              We will review all submissions and contact selected applicants to discuss the next steps in the casting process. Thank you for your interest in being a part of "Kingdom of Light"!
+              We will review all submissions and contact selected applicants to discuss the next steps in the casting process. Thank you for your interest in being a part of Kingdom of Light!
             </p>
           </div>
         </div>
