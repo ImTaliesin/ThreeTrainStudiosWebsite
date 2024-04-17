@@ -17,7 +17,7 @@ export default function RootLayout({ children }: any) {
 			<head />
 			<body
 				className={cn(
-					'font-sans antialiased',
+					'min-w-[dvh] font-sans antialiased',
 					fontSans.variable
 				)}>
 				<Header />

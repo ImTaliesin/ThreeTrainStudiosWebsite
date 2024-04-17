@@ -50,13 +50,15 @@ export default function Header() {
 					))}
 				</div>
 				<div className='absolute left-1/2 transform -translate-x-1/2 lg:static lg:transform-none'>
-					<Image
-						src='/ttsphoto.png'
-						alt='Three Train Studios'
-						width={150}
-						height={100}
-						className='object-cover object-bottom rounded-full'
-					/>
+					<Link href='/'>
+						<Image
+							src='/ttsphoto.png'
+							alt='Three Train Studios'
+							width={150}
+							height={100}
+							className='object-cover object-bottom rounded-full'
+						/>
+					</Link>
 				</div>
 				<div className='hidden lg:flex flex-1 justify-start space-x-1'>
 					{headerItems.slice(3).map((item, index) => (
