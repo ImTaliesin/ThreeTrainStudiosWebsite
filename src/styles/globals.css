@@ -6,3 +6,18 @@
 	caret-color: transparent;
 }
 
+@keyframes drift {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-drift {
+  animation: drift 8s ease-in-out infinite;
+}
