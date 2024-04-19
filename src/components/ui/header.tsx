@@ -10,7 +10,7 @@ export default function Header() {
 	const headerItems = [
 		{ label: 'Coming Soon', href: '/coming-soon' },
 		{ label: 'About Us', href: '/about' },
-		{ label: 'Pay It Forward', href: '/pay-it-forward' },
+		{ label: 'Donate', href: '/donate' },
 		{ label: 'Collaborate', href: '/collaborate' },
 		{ label: 'Casting Opportunity', href: '/casting' },
 		{ label: 'Shop', href: '/shop' },

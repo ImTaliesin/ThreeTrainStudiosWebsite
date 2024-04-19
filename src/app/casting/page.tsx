@@ -51,9 +51,9 @@ export default function Casting() {
 							If you are interested in auditioning for any of these roles,
 							please fill out our casting form below:
 						</p>
-						<form className='space-y-4'>
+						<form className='h1:text-white text-black space-y-4'>
 							<div>
-								<Label htmlFor='name'>Name</Label>
+								<Label htmlFor='name' className='text-white'>Name:</Label>
 								<Input
 									type='text'
 									id='name'
@@ -62,7 +62,7 @@ export default function Casting() {
 								/>
 							</div>
 							<div>
-								<Label htmlFor='email'>Email</Label>
+								<Label htmlFor='email' className='text-white'>Email:</Label>
 								<Input
 									type='email'
 									id='email'
@@ -71,7 +71,7 @@ export default function Casting() {
 								/>
 							</div>
 							<div>
-								<Label htmlFor='phone'>Phone</Label>
+								<Label htmlFor='phone' className='text-white'>Phone:</Label>
 								<Input
 									type='tel'
 									id='phone'
@@ -80,20 +80,23 @@ export default function Casting() {
 								/>
 							</div>
 							<div>
-								<Label htmlFor='demo'>Voice Demo Reel</Label>
+								<Label htmlFor='demo' className='text-white'>Voice Demo Reel:</Label>
 								<Input
 									type='file'
 									id='demo'
 									name='demo'
 									accept='audio/*'
 									required
+									className='md:w-1/3 w-[80%] flex-grow'
 								/>
 							</div>
-							<div>
-								<Label htmlFor='character'>Preferred Character(s)</Label>
+							<div className='text-white text-sm'>
+								<Label htmlFor='character' className='text-md'>Preferred Character(s):</Label>
 								<Select
 									name='character'
-									required>
+									required
+									>
+									
 									<option value='name1'>Name</option>
 									<option value='name2'>Name</option>
 									<option value='name3'>Name</option>

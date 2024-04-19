@@ -19,7 +19,7 @@ export default function Footer() {
           <span className='mx-1 text-gray-500'>|</span>
           <FooterItem href='/about'>About Us</FooterItem>
           <span className='mx-1 text-gray-500'>|</span>
-          <FooterItem href='/pay-it-forward'>Pay It Forward</FooterItem>
+          <FooterItem href='/donate'>Donate</FooterItem>
           <span className='md:visible mx-1 text-gray-500'>|</span>
           <FooterItem href='/collaborate'>Collaborate</FooterItem>
           <span className='mx-1 text-gray-500'>|</span>
@@ -28,8 +28,8 @@ export default function Footer() {
           <FooterItem href='/shop'>Shop</FooterItem>
         </ul>
         <div className='mt-4 text-center md:text-left md:flex md:justify-evenly md:items-center'>
-          <p className='text-gray-700 mb-2 md:mb-0'>threetrainstudios@gmail.com</p>
-          <p className='text-gray-700 mb-2 md:mb-0 md:ml-4'>
+          <p className='text-gray-700 mb-2 md:mb-0 font-semibold'>threetrainstudios@gmail.com</p>
+          <p className='text-gray-700 mb-2 md:mb-0 md:ml-4 font-bold'>
             Committed to bringing light to those that sit in darkness
           </p>
           <p className='text-gray-700 font-bold'>Get Involved</p>
