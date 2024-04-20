@@ -16,12 +16,11 @@ export default function RootLayout({ children }: any) {
 			suppressHydrationWarning>
 			<head />
 			<body
-				className={cn(
-					'min-w-[dvh] font-sans antialiased',
-					fontSans.variable
-				)}>
+				className={cn('min-w-[dvh] font-sans antialiased', fontSans.variable)}>
 				<Header />
-				{children}
+
+				<main className='pt-24'>{children}</main>
+
 				<Footer />
 			</body>
 		</html>

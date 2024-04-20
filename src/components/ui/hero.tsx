@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div
       className={cn(
-        'bg-gradient-to-b from-sky-400 to-sky-200 min-h-dvh flex flex-col items-center justify-center relative overflow-hidden'
+        'bg-gradient-to-b from-sky-400 to-sky-200 min-h-[90dvh] flex flex-col items-center justify-center relative overflow-hidden'
       )}
     >
       {/* Floating clouds */}

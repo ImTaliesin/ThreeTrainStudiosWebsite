@@ -30,7 +30,7 @@ export default function Header() {
 	return (
 		<div
 			className={cn(
-				'bg-neutral-950 h-28 w-screen flex fixed items-center justify-center px-4 z-50'
+				'bg-neutral-950 top-[-1px] h-28 w-screen flex fixed items-center justify-center px-4 z-50'
 			)}>
 			<div className='container mx-auto flex items-center justify-between'>
 				<div className='hidden lg:flex flex-1 justify-end space-x-1'>

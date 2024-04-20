@@ -5,7 +5,7 @@ export default function Donate() {
 	return (
 		<div
 			className={cn(
-				'bg-gradient-to-b from-sky-400 to-sky-200 min-h-screen flex items-center justify-center relative overflow-hidden'
+				'bg-gradient-to-b from-sky-400 to-sky-200 min-h-[90dvh] flex items-center justify-center relative overflow-hidden'
 			)}>
 			<div className='container mx-auto px-4'>
 				<div className='max-w-lg mx-auto bg-neutral-950/70 rounded-lg shadow-lg p-8 text-white'>
