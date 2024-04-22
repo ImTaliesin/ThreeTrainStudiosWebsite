@@ -13,16 +13,16 @@ export default function About() {
 						Want to feature your content on our show?
 					</h1>
 					<div className='space-y-2'>
-						<p className='text-amber-300 text-lg text-center  leading-relaxed'>
+						<p className='text-neutral-100 text-lg text-center  leading-relaxed'>
 							Email us at threetrainstudios@gmail.com to connect
 						</p>
 						<h1 className='pt-8  text-sky-400 text-2xl font-bold mb-6 text-center'>
 							Want to become a part of the team?{' '}
 						</h1>
-						<p className='text-amber-300 text-lg text-center  leading-relaxed'>
+						<p className='text-neutral-100 text-lg text-center  leading-relaxed'>
 							Reach out to us at threetrainstudios@gmail.com
 						</p>
-						<p className='text-sky-400 text-lg font-semibold text-right'>
+						<p className='text-neutral-100 t text-lg font-semibold text-right'>
 							~Three Train Studios Team
 						</p>
 					</div>
