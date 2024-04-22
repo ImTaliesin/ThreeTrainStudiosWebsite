@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div
       className={cn(
-        'bg-gradient-to-r from-amber-300/90 via-yellow-100 to-amber-300 min-h-[90dvh] flex flex-col items-center justify-center relative overflow-hidden'
+        'flex flex-col items-center justify-center relative overflow-hidden'
       )}
     >
       <div className='w-[350px] bg-red-800 text-white text-center py-8 px-12 mb-8 relative z-10 rounded-lg shadow-lg'>

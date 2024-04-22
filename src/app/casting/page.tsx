@@ -9,7 +9,7 @@ export default function Casting() {
 	return (
 		<div
 			className={cn(
-				'bg-gradient-to-r from-amber-300/90 via-yellow-100 to-amber-300 min-h-[90dvh] flex items-center justify-center relative overflow-hidden'
+				'flex items-center justify-center relative overflow-hidden'
 			)}>
 			<div className='container mx-auto px-4'>
 				<div className='max-w-3xl mx-auto bg-neutral-950/80 rounded-lg shadow-lg mt-32 mb-6 text-white'>

@@ -19,7 +19,9 @@ export default function RootLayout({ children }: any) {
 				className={cn('min-w-[dvh] font-sans antialiased', fontSans.variable)}>
 				<Header />
 
-				<main className='pt-24'>{children}</main>
+				<main className='items-center justify-center relative overflow-hidden flex pt-24 bg-gradient-to-r from-amber-300/90 via-yellow-100 to-amber-300 min-h-[90dvh]'>
+					{children}
+				</main>
 
 				<Footer />
 			</body>
