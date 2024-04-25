@@ -9,7 +9,7 @@ export default function Donate() {
 			)}>
 			<div className='container mx-auto px-4'>
 				<div className='max-w-lg mx-auto bg-neutral-950/70 rounded-lg shadow-lg p-8 text-white'>
-					<h2 className='text-2xl font-bold mb-4 text-center'>Why Help?</h2>
+					<h2 className='text-3xl font-bold mb-4 text-center'>Why Help?</h2>
 
 					<div className='mb-6'>
 						<h3 className='text-lg font-semibold mb-2 '>
