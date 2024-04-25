@@ -9,10 +9,10 @@ export default function Casting() {
 	return (
 		<div
 			className={cn(
-				'flex items-center justify-center relative overflow-hidden'
+				'flex items-center justify-center relative overflow-hidden pt-10'
 			)}>
 			<div className='container mx-auto px-4'>
-				<div className='max-w-3xl mx-auto bg-neutral-950/80 rounded-lg shadow-lg mt-32 mb-6 text-white'>
+				<div className='max-w-3xl mx-auto bg-neutral-950/80 rounded-lg shadow-lg mb-6 text-white'>
 					<h1 className='text-4xl font-bold p-4 text-center'>
 						Casting Opportunities
 					</h1>

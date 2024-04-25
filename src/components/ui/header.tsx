@@ -30,7 +30,7 @@ export default function Header() {
 	return (
 		<div
 			className={cn(
-				'bg-neutral-950 top-[-1px] h-28 w-screen flex fixed items-center justify-center px-4 z-50'
+				'bg-neutral-900 top-[-1px] h-28 w-screen flex fixed items-center justify-center px-4 z-50'
 			)}>
 			<div className='container mx-auto flex items-center justify-between'>
 				<div className='hidden lg:flex flex-1 justify-end space-x-1'>
@@ -41,8 +41,8 @@ export default function Header() {
 							<Button
 								variant='ghost'
 								className={cn(
-									'text-white text-md rounded-3xl mx-1 bg-neutral-950 px-2 py-1',
-									isActive(item.href) && 'bg-white text-neutral-950'
+									'text-white text-md rounded-3xl mx-1 bg-neutral-900 px-2 py-1',
+									isActive(item.href) && 'bg-white text-neutral-900'
 								)}>
 								{item.label}
 							</Button>
@@ -68,8 +68,8 @@ export default function Header() {
 							<Button
 								variant='ghost'
 								className={cn(
-									'text-white text-sm rounded-3xl mx-1 bg-neutral-950 px-2 py-1',
-									isActive(item.href) && 'bg-white text-neutral-950'
+									'text-white text-sm rounded-3xl mx-1 bg-neutral-900 px-2 py-1',
+									isActive(item.href) && 'bg-white text-neutral-900'
 								)}>
 								{item.label}
 							</Button>
@@ -79,14 +79,14 @@ export default function Header() {
 				<div className='lg:hidden ml-auto'>
 					<Button
 						variant='ghost'
-						className='text-white rounded-3xl bg-neutral-950'
+						className='text-white rounded-3xl bg-neutral-900'
 						onClick={toggleMenu}>
 						{isMenuOpen ? 'Close' : 'Menu'}
 					</Button>
 				</div>
 			</div>
 			{isMenuOpen && (
-				<div className='fixed top-28 left-0 right-0 bottom-0 bg-neutral-950/95 flex items-center justify-center z-40'>
+				<div className='fixed top-24 left-0 right-0 bottom-0 bg-neutral-950 flex items-center justify-center z-40'>
 					<div className='flex flex-col space-y-8 text-center'>
 						{headerItems.map((item, index) => (
 							<Link
@@ -96,7 +96,7 @@ export default function Header() {
 									variant='ghost'
 									className={cn(
 										'text-neutral-100 text-2xl rounded-full',
-										isActive(item.href) && 'bg-white text-neutral-950'
+										isActive(item.href) && 'bg-white text-neutral-900'
 									)}
 									onClick={toggleMenu}>
 									{item.label}

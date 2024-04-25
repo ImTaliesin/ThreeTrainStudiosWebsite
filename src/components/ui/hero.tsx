@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div
       className={cn(
-        'flex flex-col items-center justify-center relative overflow-hidden'
+        'flex flex-col items-center justify-center relative overflow-hidden max-h-[80dvh]'
       )}
     >
       <div className='w-[350px] bg-red-800 text-white text-center py-8 px-12 mb-8 relative z-10 rounded-lg shadow-lg'>
