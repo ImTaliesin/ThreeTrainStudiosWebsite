@@ -1,43 +1,45 @@
-import React from 'react';
-import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
+import React from 'react'
+import { cn } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
 export default function Donate() {
-	return (
-		<div
-			className={cn(
-				'flex items-center justify-center relative overflow-hidden'
-			)}>
-			<div className='container mx-auto px-4'>
-				<div className='max-w-lg mx-auto bg-neutral-950/70 rounded-lg shadow-lg p-8 text-white'>
-					<h2 className='text-3xl font-bold mb-4 text-center'>Why Help?</h2>
-
-					<div className='mb-6'>
-						<h3 className='text-lg font-semibold mb-2 '>
-							Help Us Create More Free Content:
-						</h3>
-						<p className=''>
-							Each fund helps pay all of hard working creators to keep all of
-							our content free.
-						</p>
-					</div>
-
-					<div className='mb-6'>
-						<h3 className='text-lg font-semibold mb-2'>
-							Special Features On The Show
-						</h3>
-						<p className=''>
-							Your fund can go towards having an appearance on the show, your
-							name in the credits, and more!
-						</p>
-					</div>
-
-					<div className='flex justify-end'>
-						<Button className='bg-sky-500 text-white rounded hover:bg-sky-600 '>
-							Donate
-						</Button>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div
+      className={cn(
+        'relative flex items-center justify-center overflow-hidden',
+      )}
+    >
+      <div className="container mx-auto px-4">
+        <div className="mx-auto max-w-lg rounded-lg bg-neutral-950/70 p-8 text-white shadow-lg">
+          <h2 className="mb-4 text-center text-3xl font-bold">Why Help?</h2>
+          <div className="mb-6">
+            <h3 className="mb-2 text-xl font-semibold ">
+              Help Us Create More Free Content:
+            </h3>
+            <p className="text-lg">
+              Each fund helps pay all of hard working creators to keep all of
+              our content free.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h3 className="mb-2 text-xl font-semibold">
+              Special Features On The Show
+            </h3>
+            <p className="text-lg">
+              Your fund can go towards having an appearance on the show, your
+              name in the credits, and more!
+            </p>
+          </div>
+          <h3 className="text-xl leading-relaxed">
+            Three Trains wants to provide free content for everyone to enjoy.
+            Help us continue bringing impactful content to those who need it.
+          </h3>
+          <div className="flex justify-end mt-2">
+            <Button className="rounded bg-sky-500 text-white hover:bg-sky-600 ">
+              Donate
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
