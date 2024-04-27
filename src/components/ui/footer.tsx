@@ -12,7 +12,7 @@ const FooterItem = ({ href, children }: any) => (
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-900 bottom-0 pt-4 text-white h- min-w-[100dvw] flex">
+    <footer className="bg-stone-900 bottom-0 pt-4 text-white h- min-w-[100dvw] flex">
       <div className="container mx-auto md:px-8">
         <ul className="flex flex-wrap justify-center font-semibold">
           <FooterItem href="/coming-soon">Coming Soon</FooterItem>

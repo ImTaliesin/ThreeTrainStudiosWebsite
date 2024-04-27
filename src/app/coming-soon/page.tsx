@@ -26,7 +26,7 @@ export default function About() {
       )}
     >
       <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-3xl rounded-lg bg-neutral-950/70 p-6 text-white shadow-lg sm:p-8">
+        <div className="mx-auto max-w-3xl rounded-lg bg-stone-950/70 p-6 text-stone-50 shadow-lg sm:p-8">
           <div className="flex flex-col md:flex-row">
             <div className="mb-6 md:mb-0 md:mr-8">
               <div className="h-60 w-full overflow-hidden bg-red-800 text-center md:h-80 md:w-80">
@@ -61,7 +61,7 @@ export default function About() {
                       />
                       <Button
                         type="submit"
-                        className="w-full border border-blue-600 sm:w-auto"
+                        className="w-full border sm:w-auto bg-red-950/80"
                       >
                         Sign Up
                       </Button>

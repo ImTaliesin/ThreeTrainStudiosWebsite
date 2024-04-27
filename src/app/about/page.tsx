@@ -9,7 +9,7 @@ export default function About() {
       )}
     >
       <div className='container mx-auto px-4'>
-        <div className='max-w-xl mx-auto bg-neutral-950/70 rounded-lg shadow-lg p-8 text-white'>
+        <div className='max-w-xl mx-auto bg-stone-950/70 rounded-lg shadow-lg p-8 text-stone-50'>
           <h1 className='text-4xl font-bold mb-6 text-center'>About Us</h1>
           <div className='space-y-4'>
             <p className='text-lg leading-relaxed'>

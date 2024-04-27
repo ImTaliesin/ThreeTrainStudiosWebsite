@@ -12,7 +12,7 @@ export default function Casting() {
 				'flex items-center justify-center relative overflow-hidden pt-10'
 			)}>
 			<div className='container mx-auto px-4'>
-				<div className='max-w-3xl mx-auto bg-neutral-950/80 rounded-lg shadow-lg mb-6 text-white'>
+				<div className='max-w-3xl mx-auto bg-stone-950/80 rounded-lg shadow-lg mb-6 text-stone-50'>
 					<h1 className='text-4xl font-bold p-4 text-center'>
 						Casting Opportunities
 					</h1>
@@ -51,9 +51,9 @@ export default function Casting() {
 							If you are interested in auditioning for any of these roles,
 							please fill out our casting form below:
 						</p>
-						<form className='h1:text-white text-black space-y-4'>
+						<form className='h1:text-stone-50 text-black space-y-4'>
 							<div>
-								<Label htmlFor='name' className='text-white'>Name:</Label>
+								<Label htmlFor='name' className='text-stone-50'>Name:</Label>
 								<Input
 									type='text'
 									id='name'
@@ -62,7 +62,7 @@ export default function Casting() {
 								/>
 							</div>
 							<div>
-								<Label htmlFor='email' className='text-white'>Email:</Label>
+								<Label htmlFor='email' className='text-stone-50'>Email:</Label>
 								<Input
 									type='email'
 									id='email'
@@ -71,7 +71,7 @@ export default function Casting() {
 								/>
 							</div>
 							<div>
-								<Label htmlFor='phone' className='text-white'>Phone:</Label>
+								<Label htmlFor='phone' className='text-stone-50'>Phone:</Label>
 								<Input
 									type='tel'
 									id='phone'
@@ -80,7 +80,7 @@ export default function Casting() {
 								/>
 							</div>
 							<div>
-								<Label htmlFor='demo' className='text-white'>Voice Demo Reel:</Label>
+								<Label htmlFor='demo' className='text-stone-50'>Voice Demo Reel:</Label>
 								<Input
 									type='file'
 									id='demo'
@@ -90,7 +90,7 @@ export default function Casting() {
 									className='md:w-1/3 w-[80%] flex-grow'
 								/>
 							</div>
-							<div className='text-white text-sm'>
+							<div className='text-stone-50 text-sm'>
 								<Label htmlFor='character' className='text-md'>Preferred Character(s):</Label>
 								<Select
 									name='character'
@@ -104,7 +104,7 @@ export default function Casting() {
 							</div>
 							<Button
 								type='submit'
-								className='bg-emerald-500 hover:bg-emerald-600 rounded-xl'>
+								className='bg-red-950/80 hover:bg-red-800/80 rounded-xl'>
 								Submit
 							</Button>
 						</form>
