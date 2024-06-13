@@ -1,21 +1,51 @@
-import React from 'react';
-import { cn } from '@/lib/utils';
+import React from 'react'
+import { cn } from '@/lib/utils'
+import Image from 'next/image'
+import backgroundimage from '/public/Episode 1 Coming Soon_v2.jpg'
 
 export default function Hero() {
   return (
-    <div
-      className={cn(
-        'flex flex-col items-center justify-center relative overflow-hidden max-h-[80dvh]'
-      )}
-    >
-      <div className='w-[350px] bg-red-800 text-white text-center py-8 px-12 mb-8 relative z-10 rounded-lg shadow-lg'>
-        <h2 className='text-4xl font-bold mb-4'>Kingdom of Light</h2>
-        <p className='text-2xl font-semibold'>Coming Soon</p>
+    <div className={cn('z-40 max-h-[80dvh]')}>
+      {/* Desktop view */}
+      <div className="hidden lg:block">
+        <Image
+          alt="Mountains"
+          src={backgroundimage}
+          placeholder="blur"
+          quality={100}
+          fill
+          style={{ objectPosition: 'center' }}
+          className="object-cover object-top"
+          blurDataURL="/public/Episode 1 Coming Soon_v2.jpg"
+        />
+        <div className="container relative mx-auto px-6">
+          <div className="fixed top-18z-10 w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-lg bg-teal-400/70 px-12 py-8 text-center text-white shadow-lg">
+            {/* Content for the desktop view */}
+            <h2>Help Crowdfund the Show</h2>
+            <p>Support our project and be a part of the journey!</p>
+          </div>
+        </div>
       </div>
-      <div className='w-[350px] bg-red-800 text-white text-center py-8 px-12 relative z-10 rounded-lg shadow-lg'>
-        <h3 className='text-2xl font-bold mb-4'>Voice Actors</h3>
-        <p className='text-2xl font-semibold'>WANTED</p>
+      {/* Mobile view */}
+      <div className="lg:hidden">
+        <div className="relative  justify-center align-middle ">
+          <Image
+            alt="Mountains"
+            src={backgroundimage}
+            placeholder="blur"
+            quality={100}
+            className="h-[20vh] w-[80vw] object-cover sm:object-top object-center"
+            blurDataURL="/public/Episode 1 Coming Soon_v2.jpg"
+          />
+          <div className="container mx-auto px-6">
+            <div className="relative z-10 mx-auto mt-12 max-w-[280px] rounded-lg bg-teal-400/70 px-6 py-8 text-center text-white shadow-lg">
+              {/* Content for the mobile view */}
+              <h2>Help Crowdfund the Show</h2>
+              <p>Support our project and be a part of the journey!</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  );
+  )
 }

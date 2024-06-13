@@ -52,9 +52,9 @@ export default function Header() {
 				<div className='absolute left-1/2 transform -translate-x-1/2 lg:static lg:transform-none'>
 					<Link href='/'>
 						<Image
-							src='/ttsphoto.png'
+							src='/Three Train Gold - Logo Transparent.png'
 							alt='Three Train Studios'
-							width={150}
+							width={100}
 							height={100}
 							className='object-cover object-bottom rounded-full'
 						/>
