@@ -1,47 +1,61 @@
 import React from 'react'
-import { cn } from '@/lib/utils'
 import Image from 'next/image'
-import backgroundimage from '/public/Episode 1 Coming Soon_v2.jpg'
+import backgroundimage from '/public/CastleColor3.jpg'
+import { AspectRatio } from "@/components/ui/aspect-ratio"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { cn } from '@/lib/utils'
 
 export default function Hero() {
   return (
-    <div className={cn('z-40 max-h-[80dvh]')}>
+    <div className="relative">
       {/* Desktop view */}
       <div className="hidden lg:block">
-        <Image
-          alt="Mountains"
-          src={backgroundimage}
-          placeholder="blur"
-          quality={100}
-          fill
-          style={{ objectPosition: 'center' }}
-          className="object-cover object-top"
-          blurDataURL="/public/Episode 1 Coming Soon_v2.jpg"
-        />
-        <div className="container relative mx-auto px-6">
-          <div className="fixed top-18z-10 w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-lg bg-teal-400/70 px-12 py-8 text-center text-white shadow-lg">
-            {/* Content for the desktop view */}
-            <h2>Help Crowdfund the Show</h2>
-            <p>Support our project and be a part of the journey!</p>
-          </div>
-        </div>
-      </div>
-      {/* Mobile view */}
-      <div className="lg:hidden">
-        <div className="relative  justify-center align-middle ">
+        <AspectRatio ratio={16 / 9}>
           <Image
             alt="Mountains"
             src={backgroundimage}
             placeholder="blur"
             quality={100}
-            className="h-[20vh] w-[80vw] object-cover sm:object-top object-center"
+            fill
+            className="object-cover"
             blurDataURL="/public/Episode 1 Coming Soon_v2.jpg"
           />
-          <div className="container mx-auto px-6">
-            <div className="relative z-10 mx-auto mt-12 max-w-[280px] rounded-lg bg-teal-400/70 px-6 py-8 text-center text-white shadow-lg">
-              {/* Content for the mobile view */}
-              <h2>Help Crowdfund the Show</h2>
-              <p>Support our project and be a part of the journey!</p>
+        </AspectRatio>
+        <div className="absolute top-1/2 left-1/2 z-10 w-96 max-w-sm -translate-x-1/2 -translate-y-1/2">
+          <Card className="bg-sky-400/70 shadow-lg">
+            <CardHeader>
+              <CardTitle>Help Crowdfund the Show</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-white">Support our project and be a part of the journey!</p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+
+      {/* Mobile view */}
+      <div className="lg:hidden">
+        <div className={cn("bg-sky-400 py-8")}>
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col items-center">
+              <Image
+                alt="Mountains"
+                src={backgroundimage}
+                placeholder="blur"
+                quality={100}
+                width={320}
+                height={180}
+                className="mb-6 rounded-lg shadow-lg"
+                blurDataURL="/public/Episode 1 Coming Soon_v2.jpg"
+              />
+              <Card className="w-full max-w-sm bg-white/70 shadow-lg">
+                <CardHeader>
+                  <CardTitle>Help Crowdfund the Show</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>Support our project and be a part of the journey!</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
