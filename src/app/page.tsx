@@ -3,59 +3,37 @@ import Image from 'next/image';
 import backgroundimage from '/public/CastleColor3.jpg';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
+import kolglowing from '/public/KOLGlowing-Wordmark.png';
 
 export default function Hero() {
   return (
-    <div>
-      {/* Desktop view */}
-      <div className="z-50 hidden lg:block">
-        <div className="relative w-dvw h-[80dvh]">
-          <Image
-            alt="Mountains"
-            src={backgroundimage}
-            placeholder="blur"
-            quality={100}
-            fill
-            style={{ objectFit: 'cover', objectPosition: 'center' }}
-            blurDataURL="/public/Episode 1 Coming Soon_v2.jpg"
-          />
-          <div className="absolute inset-x-0 bottom-0 flex items-center justify-center mb-8">
-            <Card className="bg-sky-400/70 w-96 max-w-sm p-6">
-              <CardHeader>
-                <CardTitle>Help Crowdfund the Show</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-white">Support our project and be a part of the journey!</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
+    <div className="bg-cover bg-center max-w-dvw flex flex-col items-center justify-between overflow-x-hidden">
+      <Image
+        alt="Mountains"
+        src={backgroundimage}
+        placeholder="blur"
+        quality={100}
+        fill
+        blurDataURL="/public/Episode 1 Coming Soon_v2.jpg"
+        className="overflow-hidden object-cover brightness-95 h-[70dvh]"
+      />
+      <div className="flex items-center justify-center mt-16 mx-6">
+        <Image
+          alt="Kolglowing"
+          src={kolglowing}
+          
+          className="object-contain z-20 max-h-[160px] w-"
+        />
       </div>
-
-      {/* Mobile view */}
-      <div className="lg:hidden bg-sky-400 py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center">
-            <Image
-              alt="Mountains"
-              src={backgroundimage}
-              placeholder="blur"
-              quality={100}
-              width={320}
-              height={180}
-              className="mb-6 rounded-lg shadow-lg"
-              blurDataURL="/public/Episode 1 Coming Soon_v2.jpg"
-            />
-            <Card className="w-full max-w-sm bg-white/70 shadow-lg">
-              <CardHeader>
-                <CardTitle>Help Crowdfund the Show</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>Support our project and be a part of the journey!</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
+      <div className="text-stone-900 flex items-center justify-center mt-32 z-20 max-w-lg">
+        <Card className="bg-yellow-300/80 p-6 text-center">
+          <CardHeader>
+            <CardTitle className='text-2xl font-bold '>Three Trains wants to provide free content for everyone to enjoy.</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-md font-semibold">Our debut project, 'Kingdom of Light' offers a safe haven for young viewers and adults - a blend of education and entertainement, wrapped in captivating animation. With your support, we aim to illuminate paths during life's darkest moments, guiding people toward their inner light.</p>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );
