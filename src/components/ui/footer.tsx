@@ -1,29 +1,37 @@
-import React from 'react'
-import Link from 'next/link'
-import { cn } from '@/lib/utils'
-
-const FooterItem = ({ href, children }: any) => (
-  <li className="mb-2 md:mb-0">
-    <Link href={href} className={cn(' hover: mx-1')}>
-      {children}
-    </Link>
-  </li>
-)
+import React from 'react';
+import Link from 'next/link';
+import { FaInstagram, FaYoutube } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="h- bottom-0  flex min-w-[100dvw] bg-stone-900 text-white">
-      <div className="flex-1">
-        <div className="text-center md:my-6 md:flex md:items-center md:justify-evenly md:text-left">
-          <p className=" my-2 font-semibold md:my-0 md:mb-0">
-            threetrainstudios@gmail.com
-          </p>
-          <p className=" my-2 font-bold md:my-0 md:pb-0 md:pl-4">
-            Committed to bringing light to those that sit in darkness
-          </p>
-          <p className="pb-4 font-bold md:pb-0">Get Involved</p>
-        </div>
+    <footer className="bg-stone-900 py-4 text-white">
+      <div className="container mx-auto px-4 text-center">
+        
+        <p className="mb-2 font-bold">
+          Committed to bringing light to those that sit in darkness
+        </p>
+        <ul className="flex justify-center">
+          <li className="mx-2">
+            <Link
+              href="https://www.instagram.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="text-2xl text-white hover:text-gray-300" />
+            </Link>
+          </li>
+          <li className="mx-2">
+            <Link
+              href="https://www.youtube.com/channel/yourchannelid"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube className="text-2xl text-white hover:text-gray-300" />
+            </Link>
+          </li>
+        </ul>
+        <p className="mt-2 font-semibold">threetrainstudios@gmail.com</p>
       </div>
     </footer>
-  )
+  );
 }
