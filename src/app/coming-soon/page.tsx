@@ -25,7 +25,7 @@ export default function About() {
                 enjoy.
               </p>
               <p className="mt-4 text-lg leading-relaxed">
-                We are currently working on Episode 1 of "Kingdom of Light".
+                We are currently working on Episode 1 of &quot;Kingdom of Light&quot;.
                 Stay tuned for more information.
               </p>
               <p className="mt-4 text-lg leading-relaxed">
