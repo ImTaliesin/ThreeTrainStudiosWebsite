@@ -12,8 +12,7 @@ export default function Header() {
 		{ label: 'About Us', href: '/about' },
 		{ label: 'Donate', href: '/donate' },
 		{ label: 'Collaborate', href: '/collaborate' },
-		{ label: 'Casting Opportunity', href: '/casting' },
-		{ label: 'Shop', href: '/shop' },
+		
 	];
 
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +33,7 @@ export default function Header() {
 			)}>
 			<div className='container mx-auto flex items-center justify-between'>
 				<div className='hidden lg:flex flex-1 justify-end space-x-1'>
-					{headerItems.slice(0, 3).map((item, index) => (
+					{headerItems.slice(0, 2).map((item, index) => (
 						<Link
 							key={index}
 							href={item.href}>
@@ -61,7 +60,7 @@ export default function Header() {
 					</Link>
 				</div>
 				<div className='hidden lg:flex flex-1 justify-start space-x-1'>
-					{headerItems.slice(3).map((item, index) => (
+					{headerItems.slice(2).map((item, index) => (
 						<Link
 							key={index + 3}
 							href={item.href}>
